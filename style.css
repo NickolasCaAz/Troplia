@@ -34,7 +34,7 @@ main{
     color: black;
   }
   .topnav a.active {
-    background-color: #04AA6D;
+    background-color: darkgreen;
     color: white;
   }
   .footer{
