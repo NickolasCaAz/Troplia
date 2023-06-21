@@ -21,7 +21,6 @@
 
 		header {
 			background-color: darkgreen;
-			padding: 20px;
 			text-align: center;
 		}
 
@@ -57,15 +56,39 @@
         }
 	</style>
 </head>
-<header>
-    <div class="topnav">
-        <a  href="index.html">Home</a>
-        <a  class="active" href="Sobre nos.html">Sobre nós</a>
-        <a href="Contato.html">Contato</a>
-        <a  href="Nossa equipe.html">Nossa equipe</a>
-      </div>
- </header>
 <body>
+
+    <header>
+        <div class="top-bar">
+            <div class="logo-wrapper">
+              <a href="index.html">
+              <img class="logo" src="images/troplia (1).png" alt="Logo">
+            </a>
+            <div class="dropdown">
+              <span>&#9776;</span> <!-- Caractere HTML para os três traços -->
+              <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="Sobre nos.html">Sobre</a>
+                <a href="Contato.html">Contato</a>
+                <a href="Nossa equipe.html">Equipe</a>
+              </div>
+            </div>
+          </div>
+          
+          
+        
+          <script>
+            // Script para alternar a exibição do menu dropdown ao clicar nos três traços
+            const dropdown = document.querySelector('.dropdown');
+            const dropdownContent = document.querySelector('.dropdown-content');
+
+            dropdown.addEventListener('click', () => {
+            dropdownContent.style.display = dropdownContent.style.display === 'none' ? 'block' : 'none';
+    });
+          </script>
+    </header>
+
+
 <div class="wrapper">
     <div class="content">
         <header>
@@ -75,11 +98,14 @@
         
         <hr>
     </header>
-    <h3>Visão</h3>
-    <p>A Troplia visa desenvolver soluções inteligentes para a sociedade e melhorar processos de produção, como na área alimentar. </p><p>Fornecemos ferramentas para direcionar uma melhor tomada de decisões por parte dos produtores, sejam pequenos ou grandes.</p><p> Além disso, buscamos desenvolver produtos capazes de controlar pragas agrícolas, que sejam amigáveis ao meio ambiente e mais seguros ao consumidor.<br></p>
+    <div class="alinhar">
+        <h3>Visão</h3>
+        <p>A Troplia LTDA. é uma empresa idealizada no ano de 2019 por profissionais que vislumbravam juntar suas expertises para gerar novos produtos sustentáveis, em seu sentido amplo, para o mercado agrícola. Ou seja, produtos amigáveis ao meio ambiente, mas competitivos do ponto de vista de mercado. 
+            A Troplia tem como missão “Promover o desenvolvimento da sociedade com soluções efetivas, inovadoras e sustentáveis visando alcançar um futuro melhor para todos”.</p>
+    </div>
     </section>
 
-    <section>
+    <section class="alinhar">
     <h3><br>Áreas de Atuação</h3>
     <ul>
         <li>Biotecnologia</li>
@@ -89,7 +115,7 @@
     </ul>
     </section>
 
-    <section>
+    <section class="alinhar">
     <h3>Serviços e/ou Produtos</h3>
     <ul>
         <li>Soluções biotecnológicas para o mercado agropecuário</li>
@@ -119,7 +145,7 @@
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/company/troplia-ltda/" style="text-decoration: none;color: white;" target=”_blank”><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
 

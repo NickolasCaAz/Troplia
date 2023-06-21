@@ -7,25 +7,37 @@
     <title>Troplia - Nossa equipe</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/9fbdb1a96e.js" crossorigin="anonymous"></script>
-    <style>
-      img{
-        width: 200px;
-        height: 450px;
-      }
-
-
-
-    </style>
   </head>
 
-<header>
-    <div class="topnav">
-        <a  href="index.html">Home</a>
-        <a href="Sobre nos.html">Sobre nós</a>
-        <a href="Contato.html">Contato</a>
-        <a class="active" href="Nossa equipe.html">Nossa equipe</a>
+  <header>
+    <div class="top-bar">
+        <div class="logo-wrapper">
+          <a href="index.html">
+          <img class="logo" src="images/troplia (1).png" alt="Logo">
+        </a>
+        <div class="dropdown">
+          <span>&#9776;</span> <!-- Caractere HTML para os três traços -->
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="Sobre nos.html">Sobre</a>
+            <a href="Contato.html">Contato</a>
+            <a href="Nossa equipe.html">Equipe</a>
+          </div>
+        </div>
       </div>
- </header>
+      
+      
+    
+      <script>
+        // Script para alternar a exibição do menu dropdown ao clicar nos três traços
+        const dropdown = document.querySelector('.dropdown');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        dropdown.addEventListener('click', () => {
+        dropdownContent.style.display = dropdownContent.style.display === 'none' ? 'block' : 'none';
+});
+      </script>
+</header>
 <body>
     <div class="about-section">
         <h1 style="font-size: x-large;">Conheça a Nossa Equipe</h1>
@@ -36,12 +48,12 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <img src="images/photo placeholder.png" alt="Jane" style="width:100%">
-            <div class="container">
+            <img src="images/photo placeholder.png" alt="Jane" class="perfil" style="width:100%">
+            <div class="container1">
               <h2 style="font-size: medium;">Lorena Ferreira Peixoto</h2>
               <p class="title">Sócio</p>
               <p>Texto que compoem uma pequena descrição sobre.</p>
-              <p>Lorena@example.com</p>
+            
               
             </div>
           </div>
@@ -49,12 +61,12 @@
       
         <div class="column">
           <div class="card">
-            <img src="images/photo placeholder.png" alt="Mike" style="width:100%">
-            <div class="container">
+            <img src="images/photo placeholder.png" alt="Mike" class="perfil" style="width:100%">
+            <div class="container1">
               <h2 style="font-size: medium;">Marcelo Henrique S. Ramada</h2>
               <p class="title">Sócio-Administrador</p>
-              <p>Texto que compoem uma pequena descrição sobre.</p>
-              <p>Marcelo@example.com</p>
+              <p>PhD in Molecular Biology.</p>
+          
              
             </div>
           </div>
@@ -62,12 +74,12 @@
         
         <div class="column">
           <div class="card">
-            <img src="images/photo placeholder.png" alt="John" style="width:100%">
-            <div class="container">
-              <h2 style="font-size: medium;">Daniel Gusmao de Morais</h2>
+            <img src="images/photo placeholder.png" alt="John" class="perfil" style="width:100%">
+            <div class="container1">
+              <h2 style="font-size: medium;">Stephan Machado Dohms</h2>
               <p class="title">Sócio</p>
               <p>Texto que compoem uma pequena descrição sobre.</p>
-              <p>Dianel@example.com</p>
+            
               
             </div>
           </div>
@@ -90,7 +102,7 @@
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/company/troplia-ltda/" style="text-decoration: none;color: white;" target=”_blank”><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
 
